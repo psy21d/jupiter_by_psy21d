@@ -1,0 +1,38 @@
+body {
+    width: 400px;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  nav button {
+    flex: 1;
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  nav button.active {
+    border-bottom: 2px solid #007acc;
+  }
+  
+  .tab {
+    padding: 1rem;
+    overflow-y: auto;
+    max-height: 90vh;
+  }
+  
+  .token-item {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .token-item:hover {
+    text-decoration: underline;
+  }

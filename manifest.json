@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Token Helper",
+  "version": "1.0",
+  "author": "psy21d",
+  "description": "Помогает находить и обменивать SPL-токены Solana на любой странице.",
+  "icons": {
+    "48": "icon48.png",
+    "96": "icon96.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "<all_urls>",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "sidebar_action": {
+    "default_title": "Token Helper",
+    "default_panel": "sidebar.html"
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"],
+    "run_at": "document_end"
+  }],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "content_security_policy": "script-src 'self'; object-src 'self'"
+}

@@ -1,0 +1,22 @@
+/* Inter */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+    src: url('./Inter/Inter-100.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    src: url('./Inter/Inter-200.woff2') format('woff2');
+}
+/* ... и так далее для всех весов Inter ... */
+
+/* Poppins */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./Poppins/Poppins-Regular.woff2') format('woff2');
+}
